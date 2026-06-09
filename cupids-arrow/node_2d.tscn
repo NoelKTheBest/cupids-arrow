@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://casbyt0870dt" path="res://archer.tscn" id="1_0e48y"]
 [ext_resource type="PackedScene" uid="uid://b8b77nokyxda1" path="res://arrow_wbody.tscn" id="2_epypp"]
+[ext_resource type="Texture2D" uid="uid://crqa5t5p18xku" path="res://icon.svg" id="3_epypp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
 size = Vector2(84.84415, 20)
@@ -31,3 +32,23 @@ shape = SubResource("RectangleShape2D_0e48y")
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D" unique_id=2134117324]
 color = Color(0.69, 0.11040002, 0.11040002, 1)
 polygon = PackedVector2Array(-592, -2144, 592, -2144, 592, -1856, -592, -1856)
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1872835565]
+position = Vector2(-328, -152)
+texture = ExtResource("3_epypp")
+
+[node name="Icon2" type="Sprite2D" parent="." unique_id=279132563]
+position = Vector2(296, -504)
+texture = ExtResource("3_epypp")
+
+[node name="Icon3" type="Sprite2D" parent="." unique_id=817080728]
+position = Vector2(-424, -1008)
+texture = ExtResource("3_epypp")
+
+[node name="Icon4" type="Sprite2D" parent="." unique_id=181173817]
+position = Vector2(120, -1328)
+texture = ExtResource("3_epypp")
+
+[node name="Icon5" type="Sprite2D" parent="." unique_id=958816695]
+position = Vector2(-272, -1696)
+texture = ExtResource("3_epypp")
