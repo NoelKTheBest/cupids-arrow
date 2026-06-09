@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b8b77nokyxda1"]
+
+[ext_resource type="PackedScene" uid="uid://ckkoac1htqbpj" path="res://arrow.tscn" id="1_g7u2w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrrg3"]
+size = Vector2(16, 48)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=997796624]
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=366649718]
+shape = SubResource("RectangleShape2D_nrrg3")
+
+[node name="Arrow" parent="." unique_id=1782924645 instance=ExtResource("1_g7u2w")]

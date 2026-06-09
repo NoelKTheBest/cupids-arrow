@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://casbyt0870dt"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_0d38x"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" unique_id=644690729]
+self_modulate = Color(0.16916671, 0.7, 0.06299998, 1)
+mesh = SubResource("SphereMesh_0d38x")

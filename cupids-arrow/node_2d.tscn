@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://wui0sheed2vf"]
+
+[ext_resource type="PackedScene" uid="uid://casbyt0870dt" path="res://archer.tscn" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://b8b77nokyxda1" path="res://arrow_wbody.tscn" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(84.84415, 20)
+
+[node name="Node2D" type="Node2D" unique_id=776599880]
+
+[node name="MeshInstance2D" parent="." unique_id=644690729 instance=ExtResource("1_0e48y")]
+scale = Vector2(50, 50)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1967806143]
+
+[node name="RigidBody2D" parent="." unique_id=997796624 instance=ExtResource("2_epypp")]
+position = Vector2(0, -48)
+linear_velocity = Vector2(0, -500)
+
+[node name="Camera2D" type="Camera2D" parent="RigidBody2D" unique_id=2073487224]
+position = Vector2(0, 48)
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1582142689]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1958627939]
+position = Vector2(0, -2000)
+scale = Vector2(13.955, 13.955)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D" unique_id=2134117324]
+color = Color(0.69, 0.11040002, 0.11040002, 1)
+polygon = PackedVector2Array(-592, -2144, 592, -2144, 592, -1856, -592, -1856)
